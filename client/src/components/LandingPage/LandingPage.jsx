@@ -11,24 +11,26 @@ import {
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion'
 import './landinpage.css'
+import NavBar from "../NavBar/NavBar.jsx"
 
 function LandingPage() {
 
   return (
     <>
             <div className='landingPage'>
-            
+              <NavBar/>
               <motion.div
                 initial={{ opacity: 0 }}
                 transition={{ duration: 1.3 }}
                 animate={{
                   opacity: 1
                 }}>
+
                 <Container maxW={'8xl'} bgColor={'#bed2ed'}>
                   <Stack
                     align={'center'}
                     spacing={{ base: 8, md: 10 }}
-                    py={{ base: 20, md: 28 }}
+                    py={{ base: 30, md: 19 }}
                     direction={{ base: 'column', md: 'row' }}>
                         <Flex
                       flex={1}
